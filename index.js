@@ -15,7 +15,6 @@ app.use(cors({
 //    password:String
 // });
 // const Data=mongoose.model('userData',dataSchema)
-
 async function getData(){
     const result= await mongoose.connect('mongodb://127.0.0.1:27017/mongo_db',{
         useNewUrlParser: true,
@@ -33,7 +32,6 @@ async function getData(){
     console.log(responce);
 }
 getData()
-
 //! using mongodb 
 /*const { MongoClient } = require('mongodb');
 const url = 'mongodb://127.0.0.1:27017/';
@@ -52,4 +50,3 @@ async function getData() {
   }
 }
 getData();*/
-
